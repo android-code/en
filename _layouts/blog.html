@@ -1,0 +1,39 @@
+---
+layout: compress
+---
+<html lang="{{ site.lang | default: "pl" }}">
+
+  {% include head.html %}
+
+  <body class="site">
+
+    {% include header.html %}
+
+    <div class="hero--small">
+      <div class="hero__wrap">
+        <h1 class="hero__title">{{ page.title }}</h1>
+      </div>
+    </div>
+
+    <main class="site__content">
+      <section class="blog">
+        <div class="container">
+          <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
+
+            {% for post in paginator.posts %}
+              {% include post-card.html %}
+            {% endfor %}
+
+          </div>
+
+          {% include pagination.html %} 
+
+        </div>
+      </section>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

@@ -1,0 +1,23 @@
+---
+layout: compress
+---
+<html lang="{{ site.lang | default: "pl" }}">
+
+  {% include head.html %}
+
+  <body class="site">
+
+    {% include header.html %}
+
+    <div class="hero--big lazyload" data-bg="{{site.url}}/assets/img/main_banner.jpg">
+      <div class="hero__wrap">
+        <h1 class="hero__title">{{ site.title }}</h1>
+        <div class="hero__meta">{{ site.data.strings.description }}</div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

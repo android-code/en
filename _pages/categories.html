@@ -1,0 +1,11 @@
+---
+layout: page
+title: Categories
+permalink: /categories/
+---
+
+<div class="categories-post-wrapper">
+	{% for category in site.categories %}
+	  {% include category-posts.html %}
+	{% endfor %}
+</div>

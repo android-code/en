@@ -1,0 +1,39 @@
+<div class="controls__inner pagination__inner">
+  
+  <div class="controls__item prev">
+    {% if paginator.previous_page %}
+    
+    <span>
+      {{ site.data.strings.controls-previous | default: "Previous" }}
+    </span>
+
+    <a href="{{ paginator.previous_page_path }}">
+      <i class='fa fa-angle-left'></i>
+      {{ site.data.strings.controls-page | default: "Page:" }}
+      {{ paginator.previous_page }} 
+      {{ site.data.strings.controls-page-of | default: "of" }}
+      {{ paginator.total_pages }}
+    </a>
+
+    {% endif %}
+  </div>
+
+  <div class="controls__item next">
+    {% if paginator.next_page %}
+    
+    <span>
+      {{ site.data.strings.controls-next | default: "Next" }}
+    </span>
+
+    <a href="{{ paginator.next_page_path }}">
+      {{ site.data.strings.controls-page | default: "Page:"}}
+      {{ paginator.next_page }} 
+      {{ site.data.strings.controls-page-of | default: "of" }}
+      {{ paginator.total_pages }}
+      <i class='fa fa-angle-right'></i>
+    </a>
+    
+    {% endif %}
+  </div>
+
+</div>

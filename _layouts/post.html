@@ -1,0 +1,45 @@
+---
+layout: compress
+---
+<html lang="{{ site.lang | default: "pl" }}">
+
+  {% include head.html %}
+
+  <body class="site">
+
+  {% include header.html %}
+
+  {% if page.image %}
+    <div class="hero lazyload" data-bg="{{site.url}}/assets/img/posts/{{page.image}}.jpg">
+  {% else %}
+    <div class="hero dark-bg">
+  {% endif %}
+
+    {% include post-metadata.html %}
+
+    </div>
+    </div>
+
+    <main class="site__content">
+      <div class="container">
+        <article class="post-content" itemprop="articleBody">
+          {{ content }}
+
+          {% if site.post-share-enable %}
+            {% include post-share-buttons.html %}
+          {% endif %}
+        </article>
+
+        {% if site.post-controls-enable %}
+          {% include post-controls.html %}
+        {% endif %}
+
+      </div>
+
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
