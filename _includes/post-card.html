@@ -22,7 +22,7 @@
       <h2>{{ post.title | strip_html | truncate: 50 }}</h2>
       <h5>{{ post.categories }}</h5>
       <span class="post-card__meta">
-        <time>{% include date-translated.html date=page.date format=site.date_format %}</time>
+        <time>{% include date-translated.html date=post.date format=site.date_format %}</time>
       </span>
     </div>
 
