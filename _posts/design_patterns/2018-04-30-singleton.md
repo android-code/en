@@ -4,7 +4,7 @@ title: "Singleton"
 date:  2018-04-30
 categories: ["Design patterns"]
 image: singleton
-github: Singleton
+github: singleton
 description: "Design patterns / creational"
 keywords: "singleton, pattern, design pattern, design patterns, creational pattern, sharedpreferences, android, java, programming"
 ---

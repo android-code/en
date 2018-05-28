@@ -4,7 +4,7 @@ title: "Decorator"
 date:  2018-05-14
 categories: ["Design patterns"]
 image: decorator
-github: Decorator
+github: decorator
 description: "Design patterns / structural"
 keywords: "decorator, pattern, design pattern, design patterns, structural pattern, android, java, programming"
 ---
