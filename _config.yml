@@ -8,10 +8,6 @@ baseurl: ""
 url: "http://droidcode.it"
 ghpage: "https://android-code.github.io"
 
-# GTM
-google-analytics: "UA-117930916-2"
-google-analytics-enable: true
-
 # Switches
 lang: "en"
 lang-switch-enable: true
